@@ -129,6 +129,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.14.1-x86_64-linux)
       racc (~> 1.4)
+    pg (0.17.1)
     public_suffix (5.0.1)
     puma (5.6.5)
       nio4r (~> 2.0)
@@ -155,6 +156,11 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.5.0)
       loofah (~> 2.19, >= 2.19.1)
+    rails_12factor (0.0.2)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (7.0.4.2)
       actionpack (= 7.0.4.2)
       activesupport (= 7.0.4.2)
@@ -219,8 +225,10 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
+  pg (= 0.17.1)
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.2)
+  rails_12factor (= 0.0.2)
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)
@@ -231,7 +239,7 @@ DEPENDENCIES
   webdrivers
 
 RUBY VERSION
-   ruby 3.0.0p0
+   ruby 3.2.0p0
 
 BUNDLED WITH
    2.4.1
