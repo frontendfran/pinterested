@@ -38,6 +38,9 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
+gem 'bootstrap', '~> 4.2.1'
+gem 'jquery-rails'
+
 
 # Use Sass to process CSS
 # gem "sassc-rails"
@@ -73,6 +76,6 @@ end
 
 group :production do
   # change DB for production which is more robust for Heroku
-  gem 'pg',             '0.17.1'
+  gem 'pg', '~> 1.4', '>= 1.4.5'
   gem 'rails_12factor', '0.0.2'
 end
