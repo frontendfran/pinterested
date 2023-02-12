@@ -1,5 +1,19 @@
 @import "bootstrap";
 
+button.nav-link {
+    all: unset;
+    cursor: pointer;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+
+    &:hover {
+        color: #0056b3;
+    }
+}
+
 .center {
     text-align: center;
 }
