@@ -2,6 +2,11 @@
     <h1>Welcome to my Pinterested App</h1>
     <p>Pretty cool!</p>
 
-    <%= link_to "Login", new_user_session_path, class: "btn btn-primary" %>
-    <%= link_to "Join", new_user_registration_path, class: "btn btn-secondary" %>
+    <% if user_signed_in? %>
+        <%= button_to 'Logout', destroy_user_session_path, method: :delete, class: "btn btn-primary" %>
+        <%= link_to 'Edit Profile', edit_user_registration_path, class: "btn btn-secondary" %>
+    <% else %>
+        <%= link_to "Login", new_user_session_path, class: "btn btn-primary" %>
+        <%= link_to "Join", new_user_registration_path, class: "btn btn-secondary" %>
+    <% end %>
 </section>
