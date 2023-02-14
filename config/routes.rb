@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :pins
   devise_for :users
   # when someone goes to home/index, show home/index - want this to show up on the root of the app
   root 'home#index'

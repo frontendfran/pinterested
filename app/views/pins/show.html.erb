@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @pin %>
+
+<div>
+  <%= link_to "Edit this pin", edit_pin_path(@pin) %> |
+  <%= link_to "Back to pins", pins_path %>
+
+  <%= button_to "Destroy this pin", @pin, method: :delete %>
+</div>
