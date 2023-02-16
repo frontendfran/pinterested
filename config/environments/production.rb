@@ -93,4 +93,6 @@ Rails.application.configure do
 
   # Added as per Devise installation instructions
   config.action_mailer.default_url_options = { host: 'terested-ruby-on-rails.herokuapp.com' }
+
+  config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present? || ENV['RENDER'].present?
 end
